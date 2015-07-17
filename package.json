@@ -1,0 +1,26 @@
+{
+  "name": "astronomer-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VennHQ/astronomer-integration.git"
+  },
+  "author": "Venn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VennHQ/astronomer-integration/issues"
+  },
+  "homepage": "https://github.com/VennHQ/astronomer-integration",
+  "dependencies": {
+    "obj-case": "^0.2.0",
+    "segmentio-integration": "^3.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
