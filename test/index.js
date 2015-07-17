@@ -8,7 +8,7 @@ describe('Venn', function(){
   var test;
 
   beforeEach(function(){
-    settings = { apiKey: '11dd737337d61bded96493074508ce8b' };
+    settings = { apiKey: 'test-aeb0fcc2c1187ae7cf91b0e2' };
     venn = new Venn(settings);
     test = Test(venn, __dirname);
   });
@@ -64,10 +64,6 @@ describe('Venn', function(){
       it('should map test for ios token ', function(){
         test.maps('identify-ios');
       });
-
-      it('should map test for ios token ', function(){
-        test.maps('identify-production');
-      });
     });
 
     describe('group', function(){
@@ -97,7 +93,7 @@ describe('Venn', function(){
       test
         .set({ apiKey: 'x' })
         .track({ event: 'event' })
-        .error('cannot POST /v1/track (401)', done);
+        .error('cannot POST /v1/track (403)', done);
     });
   });
 
@@ -131,7 +127,7 @@ describe('Venn', function(){
         .set({ apiKey: 'x' })
         .track({ event: 'event' })
         .identify({})
-        .error('cannot POST /v1/identify (401)', done);
+        .error('cannot POST /v1/identify (403)', done);
     });
   });
 
@@ -150,7 +146,7 @@ describe('Venn', function(){
         .set({ apiKey: 'x' })
         .track({ event: 'event' })
         .group({})
-        .error('cannot POST /v1/identify (401)', done);
+        .error('cannot POST /v1/identify (403)', done);
     });
   });
 
@@ -168,7 +164,7 @@ describe('Venn', function(){
         .set({ apiKey: 'x' })
         .track({ event: 'event' })
         .alias({})
-        .error('cannot POST /v1/identify (401)', done);
+        .error('cannot POST /v1/identify (403)', done);
     });
   });
 });
