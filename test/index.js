@@ -1,23 +1,23 @@
 
 var Test = require('segmentio-integration-tester');
-var Venn = require('..');
+var Lifecycle = require('..');
 
-describe('Venn', function(){
-  var venn;
+describe('Lifecycle', function(){
+  var lifecycle;
   var settings;
   var test;
 
   beforeEach(function(){
-    settings = { apiKey: 'test-aeb0fcc2c1187ae7cf91b0e2' };
-    venn = new Venn(settings);
-    test = Test(venn, __dirname);
+    settings = { apiKey: 'test-aea0a6c00bba37053a9c8e62' };
+    lifecycle = new Lifecycle(settings);
+    test = Test(lifecycle, __dirname);
   });
 
   it('should have correct settings', function(){
     test
-      .name('Venn')
+      .name('Lifecycle')
       .channels(['server', 'mobile'])
-      .endpoint('https://api.getvenn.io')
+      .endpoint('https://api.lifecycle.io')
       .ensure('settings.apiKey')
       .ensure('message.userId')
       .retries(2);
