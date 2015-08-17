@@ -1,6 +1,6 @@
 {
-  "name": "astronomer-integration",
-  "version": "1.0.0",
+  "name": "integration-lifecycle",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VennHQ/astronomer-integration.git"
+    "url": "https://github.com/VennHQ/integration-lifecycle.git"
   },
   "author": "Venn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VennHQ/astronomer-integration/issues"
+    "url": "https://github.com/VennHQ/integration-lifecycle/issues"
   },
-  "homepage": "https://github.com/VennHQ/astronomer-integration",
+  "homepage": "https://github.com/VennHQ/integration-lifecycle",
   "dependencies": {
     "obj-case": "^0.2.0",
     "segmentio-integration": "^3.2.0"
