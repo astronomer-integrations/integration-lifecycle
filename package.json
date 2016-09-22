@@ -1,5 +1,5 @@
 {
-  "name": "integration-lifecycle",
+  "name": "@astronomerio/integration-lifecycle",
   "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
